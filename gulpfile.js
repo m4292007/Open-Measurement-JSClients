@@ -74,7 +74,9 @@ gulp.task('build-verification-client', () => {
     js_output_file: 'omid-verification-client-v1.js',
     output_wrapper_file: UMD_BOOTSTRAPPER,
     dependency_mode: 'PRUNE',
-    entry_point: 'goog:omid.verificationClient.VerificationClient',
+    entry_point: 'goog:omid.verificationClient',
+    //entry_point: 'goog:omid.verificationClient.VerificationClient',
+    //entry_point: 'omid.verificationClient.VerificationClient',
     externs: [
       ...commonConfig.externs,
       './src/externs/omid-jasmine.js',
